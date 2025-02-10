@@ -1,17 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import Home from './Home'
+import { useState } from "react";
+
+import Home from "./Home";
 // import Funct from './Funct'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <Home/>
+      <Home />
       {/* <Funct/> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
