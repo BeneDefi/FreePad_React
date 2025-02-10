@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 const NavBar = () => {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <nav>
+      <style>
+        {`
+          .dropdown {
+            display: none; /* Hide by default */
+          }
+          .dropdown.show {
+            display: block; /* Show when the 'show' class is applied */
+          }
+        `}
+      </style>
       <div className="nav-container">
         <div className="nav-holder" style={{ paddingBottom: "30px" }}>
           <div className="logo">
-            <img className="logo-img" src="logoFreepad.png" alt="logo-img" />
+            <img
+              className="logo-img"
+              src="src/assets/freepadlogo.png"
+              alt="logo-img"
+            />
             <div className="logo-text">
               Free<span>Pad</span>
             </div>
@@ -34,12 +50,19 @@ const NavBar = () => {
         </div>
         <div className="toggle-container">
           <button className="toggle-btn" id="theme-toggle">
-            <img className="toggle-img" src="brightness.png" alt="brightness" />
+            <img
+              className="toggle-img"
+              src="src/assets/brightness.png"
+              alt="brightness"
+            />
           </button>
         </div>
-        <i className="fa-solid fa-bars hamburg" onClick={() => {}}></i>
+        <i
+          className="fa-solid fa-bars hamburg"
+          onClick={() => setDropdownOpen(!isDropdownOpen)}
+        ></i>
       </div>
-      <div className="dropdown">
+      <div className={`dropdown ${isDropdownOpen ? "show" : ""}`}>
         <div className="links">
           <a href="index.html">Home</a>
           <a href="doc.html">About</a>
@@ -53,7 +76,10 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <i className="fa-solid fa-xmark cancel" onClick={() => {}}></i>
+        <i
+          className="fa-solid fa-xmark cancel"
+          onClick={() => setDropdownOpen(false)}
+        ></i>
       </div>
     </nav>
   );

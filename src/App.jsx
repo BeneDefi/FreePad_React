@@ -1,9 +1,9 @@
 import React from "react";
-import NavBar from "./NavBar";
-import HeroSection from "./HeroSection";
-import IDOSection from "./IDOSection";
-import HowItWorksSection from "./HowItWorksSection";
-import Footer from "./Footer";
+import NavBar from "./components/NavBar";
+import HeroSection from "./components/HeroSection";
+import IDOSection from "./components/IDOSection";
+import HowItWorksSection from "./components/HowItWorksSection";
+import Footer from "./components/Footer";
 
 function Home() {
   return (
