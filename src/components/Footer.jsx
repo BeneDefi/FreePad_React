@@ -1,4 +1,5 @@
 import React from "react";
+import "../footer.css";
 
 const Footer = () => {
   return (
@@ -44,19 +45,19 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="footer-social">
-        <a href="https://x.com/freepad_io?s=21" aria-label="Twitter">
-          <i className="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://t.me/Freepadofficial" aria-label="Telegram">
-          <i className="fa-brands fa-telegram"></i>
-        </a>
-        <a href="https://medium.com/@freepad.io" aria-label="Medium">
-          <i className="fa-brands fa-medium"></i>
-        </a>
-      </div>
       <div className="footer-bottom">
         <h5>&copy; 2025 FreePad. All rights reserved.</h5>
+        <div className="footer-social">
+          <a href="https://x.com/freepad_io?s=21" aria-label="Twitter">
+            <i className="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://t.me/Freepadofficial" aria-label="Telegram">
+            <i className="fa-brands fa-telegram"></i>
+          </a>
+          <a href="https://medium.com/@freepad.io" aria-label="Medium">
+            <i className="fa-brands fa-medium"></i>
+          </a>
+        </div>
       </div>
     </footer>
   );
