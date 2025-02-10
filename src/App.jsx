@@ -1,17 +1,20 @@
-import { useState } from "react";
+import React from "react";
+import NavBar from "./NavBar";
+import HeroSection from "./HeroSection";
+import IDOSection from "./IDOSection";
+import HowItWorksSection from "./HowItWorksSection";
+import Footer from "./Footer";
 
-import Home from "./Home";
-// import Funct from './Funct'
-
-function App() {
-  const [count, setCount] = useState(0);
-
+function Home() {
   return (
     <>
-      <Home />
-      {/* <Funct/> */}
+      <NavBar />
+      <HeroSection />
+      <IDOSection />
+      <HowItWorksSection />
+      <Footer />
     </>
   );
 }
 
-export default App;
+export default Home;
