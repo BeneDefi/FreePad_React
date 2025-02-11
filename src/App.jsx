@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import './App.css'
-import Home from './Home'
-// import Funct from './Funct'
+import React from "react";
+import NavBar from "./components/NavBar";
+import HeroSection from "./components/HeroSection";
+import IDOSection from "./components/IDOSection";
+import HowItWorksSection from "./components/HowItWorksSection";
+import Footer from "./components/Footer";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Home() {
   return (
     <>
-      <Home/>
-      {/* <Funct/> */}
+      <NavBar />
+      <HeroSection />
+      <IDOSection />
+      <HowItWorksSection />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default Home;

@@ -1,0 +1,42 @@
+/* Footer Styles */
+footer {
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: center; /* Center content */
+  align-items: center; /* Center content */
+  padding: 20px; /* Add some space around the footer */
+  background-color: #282c34; /* Dark background */
+  color: #fff; /* White text */
+  padding: 20px; /* Padding around the footer */
+  text-align: center; /* Centered text */
+}
+
+.footer-content {
+  margin-bottom: 15px; /* Space below the content */
+}
+
+.footer-links {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center links */
+  flex-wrap: wrap; /* Wrap links on smaller screens */
+  margin-bottom: 15px; /* Space below the links */
+}
+
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* White text */
+  margin: 0 10px; /* Space between links */
+}
+
+.footer-social {
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center social icons */
+  margin-bottom: 15px; /* Space below the social icons */
+}
+
+.footer-bottom {
+  display: inline;
+  margin-top: 20px; /* Space above copyright */
+  font-size: 1em; /* Smaller text */
+  color: #ccc; /* Light gray text */
+}
